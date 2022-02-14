@@ -19,17 +19,19 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.h2database:h2")
-    runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.assertj:assertj-core")
     implementation("io.micronaut:micronaut-validation")
 
     testImplementation("org.mockito:mockito-core")
     testImplementation 'org.mockito:mockito-junit-jupiter:2.23.0'
-    testImplementation("org.testcontainers:postgresql")
 
     annotationProcessor("io.micronaut.data:micronaut-data-processor:3.2.2")
     implementation("io.micronaut.data:micronaut-data-hibernate-jpa:3.2.2")
     runtimeOnly("io.micronaut.sql:micronaut-jdbc-tomcat")
+
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+
+
 }
 
 

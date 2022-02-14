@@ -41,4 +41,14 @@ public class TodoServiceShould {
         // Asert
         todoRepository.findByStatusOrderById(Status.OPEN);
     }
+
+//    @Test
+//    public void invoke_repository_to_mark_as_todo() {
+//        // Arrange
+//        TodoService todoService = new TodoService(todoRepository);
+////        Act
+//        todoService.getTodos(Status.OPEN);
+//        // Asert
+//        todoRepository.findById(Status.OPEN);
+//    }
 }
